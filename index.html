@@ -49,39 +49,40 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       transition: all 0.3s ease;
       box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       min-height: 120px;
       overflow: hidden;
     }
 
-    /* Εναλλακτικά background χρώματα για diversity */
-    .app-button:nth-child(2n) {
-      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    }
+    /* Εικόνες φόντου για κάθε κουμπί */    
+    .app-button:nth-child(1) { background-image: url('webmedia/roma.png'); }
+    .app-button:nth-child(2) { background-image: url('webmedia/daily_life.jpg'); }
+    .app-button:nth-child(3) { background-image: url('webmedia/greek_cities.png'); }
+    .app-button:nth-child(4) { background-image: url('webmedia/art.png'); }
+    .app-button:nth-child(5) { background-image: url('webmedia/constantine.jpg'); }
+    .app-button:nth-child(6) { background-image: url('webmedia/constantinople.png'); }
+    .app-button:nth-child(7) { background-image: url('webmedia/successors.png'); }
+    .app-button:nth-child(8) { background-image: url('webmedia/justinian.png'); }
+    .app-button:nth-child(9) { background-image: url('webmedia/heraclius.png'); }
+    .app-button:nth-child(10) { background-image: url('webmedia/village_life.png'); }
+    .app-button:nth-child(11) { background-image: url('webmedia/isaurian.png'); }
+    .app-button:nth-child(12) { background-image: url('webmedia/macedonian.png'); }
+    .app-button:nth-child(13) { background-image: url('webmedia/decline.png'); }
+    .app-button:nth-child(14) { background-image: url('webmedia/crusades.png'); }
+    .app-button:nth-child(15) { background-image: url('webmedia/thessaloniki.png'); }
+    .app-button:nth-child(16) { background-image: url('webmedia/ottomans.png'); }
+    .app-button:nth-child(17) { background-image: url('webmedia/fall_of_byzantium.png'); }
 
-    .app-button:nth-child(3n) {
-      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    }
-
-    .app-button:nth-child(4n) {
-      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-    }
-
-    .app-button:nth-child(5n) {
-      background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-    }
-
-    .app-button:nth-child(6n) {
-      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    }
 
     .app-button::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
       z-index: 1;
       transition: all 0.3s ease;
     }
@@ -89,7 +90,7 @@
     .app-button span {
       position: relative;
       z-index: 2;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       font-weight: 600;
       line-height: 1.4;
       text-align: center;
@@ -102,7 +103,7 @@
     }
 
     .app-button:hover::before {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.25);
     }
 
     @media (max-width: 768px) {
@@ -189,11 +190,10 @@
     <a href="ΟΙ ΤΕΛΕΥΤΑΙΕΣ ΩΡΕΣ ΤΟΥ ΒΥΖΑΝΤΙΟΥ - Storyline output/story.html" class="app-button"><span>Οι Τελευταίες Ώρες του Βυζαντίου</span></a>
   </div>
   
-    <footer>
+  <footer>
     <h4>Τεχνικές Πληροφορίες</h4>
     <p>Ο επίσημος html-based ιστότοπος "τρέχει" μέσω των <a href="https://fandcs.github.io/History-of-E-Class-Greek"><b>GitHub Pages</b></a>, ο κεντρικός ιστότοπος είναι <a href="https://sites.google.com/view/videoistoriastajewndimotikou/">Βίντεο και Μαθήματα Ιστορίας</a>. Εδώ γίνεται host μόνο των διαδραστικών εφαρμογών στον οργανισμό GitHub <a href="https://github.com/FANDCS">FANDCS</a>.</p>
     <p><i>Τελευταία επεξεργασία: 11/10/2025</i></p>
   </footer>
-  
 </body>
 </html>
